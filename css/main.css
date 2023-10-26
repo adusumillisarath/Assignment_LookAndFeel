@@ -65,3 +65,26 @@ html, body
     margin-left: 0px;
     margin-right: 0px;
 }
+/Carousel Css Starts Here/
+.heroSlider .carousel-caption {
+    top: 38%;
+    left: 10%;
+    text-align: left;
+}
+
+.heroSlider .carousel-item {
+    height: 520px;
+}
+
+.heroSlider .carousel-caption h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.heroSlider .carousel-caption p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+
+/Carousel Css Ends Here/
