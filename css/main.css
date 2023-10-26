@@ -140,3 +140,36 @@ html, body
     margin-bottom: 16px;
 }
 /*Home Page Css Ends Here*/
+/*Footer Css Starts Here*/
+.commonFooter {
+    padding: 16px 24px;
+    background-color: #f4f4f4;
+}
+
+.copyRight {
+    font-size: 13px;
+    color: #757575;
+    font-weight: 500;
+    margin: 0px;
+    padding: 16px 0px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.footerTop {
+    padding: 16px 0px;
+}
+
+.foterListItem {
+    float: left;
+    padding-right: 32px;
+    list-style-type: none;
+}
+
+    .foterListItem a {
+        font-size: 16px;
+        text-decoration: none;
+        color: #212121;
+        font-weight: 600;
+    }
+
+/*Footer Css Ends Here*/
