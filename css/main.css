@@ -88,3 +88,23 @@ html, body
 }
 
 /Carousel Css Ends Here/
+/Navbar Css Starts Here/
+.commonNavbar {
+    background-color: #ebebeb;
+}
+
+.commonNavbar .navbar-collapse {
+    flex-grow: 0;
+}
+
+.commonNavbar li.nav-item {
+    padding: 0px 18px;
+}
+
+    .commonNavbar li.nav-item a {
+        color: #212121;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+/Navbar Css Ends Here/
