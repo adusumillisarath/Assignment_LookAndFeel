@@ -65,7 +65,7 @@ html, body
     margin-left: 0px;
     margin-right: 0px;
 }
-/Carousel Css Starts Here/
+/*Carousel Css Starts Here*/
 .heroSlider .carousel-caption {
     top: 38%;
     left: 10%;
@@ -87,8 +87,8 @@ html, body
     color: #f1f1f1;
 }
 
-/Carousel Css Ends Here/
-/Navbar Css Starts Here/
+/*Carousel Css Ends Here*/
+/*Navbar Css Starts Here*/
 .commonNavbar {
     background-color: #ebebeb;
 }
@@ -107,4 +107,36 @@ html, body
         text-decoration: none;
     }
 
-/Navbar Css Ends Here/
+/*Navbar Css Ends Here*/
+
+/*Home Page Css Starts Here*/
+.keyFeatures .card
+{
+    margin-bottom: 24px;
+    border: 1px solid #eeeeee;
+    padding: 24px;
+    height: auto;
+    min-height: 280px;
+}    
+.keyFeatures .card:hover
+{
+    -webkit-box-shadow: 0px 3px 12px 0px rgb(121 112 112 / 17%);
+    -moz-box-shadow: 0px 3px 12px 0px rgb(121 112 112 / 17%);
+    box-shadow: 0px 3px 12px 0px rgb(121 112 112 / 17%);
+    background-color: #3498db0d;
+} 
+.keyFeatures .cardIcon
+{
+    font-size: 23px;
+    color: #cbcbcb;
+    border: 1px solid #cbcbcb;
+    padding: 16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+/*Home Page Css Ends Here*/
