@@ -281,3 +281,36 @@
         }
     });
 </script>
+<script>
+    //raise a complaint function
+    function actionType(type){
+
+        //add the action type here based on that type of page will decided.
+        localStorage.setItem("action", type);
+        //navigation to complaint page.
+        window.location.href = 'complaintsAddEdit.html';
+    }
+    
+    // Function to show a Bootstrap toast
+    function showToast(message) {
+        var toastContainer = document.getElementById('toastContainer');
+        var toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = '<div class="toast-header">Success</div><div class="toast-body">' + message + '</div>';
+        toastContainer.appendChild(toast);
+
+        var bsToast = new bootstrap.Toast(toast);
+        bsToast.show();
+        
+    }
+
+    //delete function
+    document.getElementById('deleteComplaints').addEventListener('click', function() {
+            
+            showToast("Deleted successfully");
+            // Navigate to another HTML page after a delay (e.g., 2 seconds)
+            setTimeout(function() {
+                window.location.href = 'complaintsDetails.html'; // Replace 'another-page.html' with your target page
+            }, 1000);
+    });
+</script>
