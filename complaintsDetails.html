@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- Data Tables Css -->
+    <link rel="stylesheet" type="text/css" href="css/datatables.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Assignment - 3</title>
+</head>
+
+<body>
+    <!-- Navigation Starts Here -->
+    <div class="commonNavbar">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand commonLogo" href="index.html">
+                    <img src="img/usf-logo-png-2.png" class="commonImage" alt="Header Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="complaints.html">Complaints</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navigation Ends Here -->
+	
+    <!-- Toaster message div section start -->
+    <div id="toastContainer" class="commonToaster toasterDeleted">
+    </div>
+    <!-- Toaster message div section End -->
+
+    <!-- Body Sectiion starts Here -->
+    <div class="mainPage my-5">
+
+        <!-- Complaints Section Starts Here -->
+        <section class="complaintsDetails">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <!-- Graph Section Starts Here -->
+                        <div class="graphPart">
+                            <div class="card commonCard">
+                                <div class="card-body">
+                                    <div id="lineChartContainer">
+                                        <canvas id="lineChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Graph Section Ends Here-->
+                        <!-- Complaints Details Tables Starts Here -->
+                        <div class="commonComplaintTable commonSectionSpacing">
+                            <div class="commonCardHeader mb-2">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <h4>Complaints Info Table</h4>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6 text-end">
+                                        <button onclick="actionType('DSave')" type="button" class="btn-primary headerResponsiveBtn">
+                                            <a >Raise a complaint</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <table id="commonDataTable" class="table commonDataTable" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Complaint Id</th>
+                                                <th>Product</th>
+                                                <th>Company Name</th>
+                                                <th>Issue</th>
+                                                <th>Complaint Status</th>
+                                                <th>Complaint Registered</th>
+                                                <th class="actionColumn">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Complaint Id">97144</td>
+                                                <td data-label="Product">Bank account or service</td>
+                                                <td data-label="Company Name">BANCO POPULAR DE PUERTO RICO</td>
+                                                <td data-label="Issue">Account opening, closing, or management</td>
+                                                <td data-label="Complaint Status">PR</td>
+                                                <td data-label="Complaint Registered">6/6/2012</td>
+                                                <td data-label="Action" class="actionColumn">
+                                                    <button onclick="actionType('VEdit')" type="button" class="btn">
+                                                        <a ><i class="fa-solid fa-eye primaryColor"></i></a>
+                                                    </button>
+                                                    <button onclick="actionType('Update')" type="button" class="btn">
+                                                        <a ><i class="fa-solid fa-pen editColor"></i></a>
+                                                    </button>
+                                                    <button type="button" class="btn grayBtn" data-bs-toggle="modal" data-bs-target="#deleteRecord">
+                                                        <i class="fa-solid fa-trash deleteColor"></i>
+                                                    </button>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <td data-label="Complaint Id">97227</td>
+                                                <td data-label="Product">Bank account or service</td>
+                                                <td data-label="Company Name">U.S. BANCORP</td>
+                                                <td data-label="Issue">Making/receiving payments, sending money</td>
+                                                <td data-label="Complaint Status">GA</td>
+                                                <td data-label="Complaint Registered">6/7/2012</td>
+                                                <td data-label="Action" class="actionColumn">
+                                                    <button onclick="actionType('VEdit')" type="button" class="btn">
+                                                        <a ><i class="fa-solid fa-eye primaryColor"></i></a>
+                                                    </button>
+                                                    <button onclick="actionType('Update')" type="button" class="btn">
+                                                        <a ><i class="fa-solid fa-pen editColor"></i></a>
+                                                    </button>
+                                                    <button type="button" class="btn grayBtn" data-bs-toggle="modal" data-bs-target="#deleteRecord">
+                                                        <i class="fa-solid fa-trash deleteColor"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Complaints Details Tables Ends Here -->
+                    </div>
+                </div>
+            </div>
+        </section>
