@@ -140,6 +140,61 @@ html, body
     margin-bottom: 16px;
 }
 /*Home Page Css Ends Here*/
+
+/*About Team Css Starts Here*/
+.teamMemberInfo .cardImage {
+    height: 250px;
+    margin-bottom: 16px;
+}
+
+.teamMemberInfo .cardImage img {
+    border-radius: 12px;
+}
+
+.teamMemberInfo .cardDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.profilePhoto {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+}
+
+    .profilePhoto img {
+        border-radius: 50%;
+    }
+
+.githubLinkBox {
+    background-color: #f4f4f4;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.githubLink .card {
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+    .githubLink .card img {
+        border-radius: 12px;
+    }
+
+.githubLink .card-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.githubLinkBox a {
+    word-break: break-word;
+}
+
+/*About Team Css Ends Here*/
 /*Footer Css Starts Here*/
 .commonFooter {
     padding: 16px 24px;
