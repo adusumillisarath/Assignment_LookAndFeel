@@ -182,3 +182,1080 @@
     </body>
 
 </html>
+
+<script>
+    $(document).ready(function() {
+        $('#data-table').DataTable();
+    });
+
+    //raise a complaints fucntion
+    function raiseComplaint(type){
+
+        //add the action type here based on that type of page will decided.
+        localStorage.setItem("action", type);
+        //navigation to complaint page.
+        window.location.href = 'complaintsAddEdit.html';
+    }
+</script>
+
+<script>
+    var jsonData = [
+ {
+  "CompanyName": "AR VR Company",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANCO POPULAR DE PUERTO RICO",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 28
+ },
+ {
+  "CompanyName": "BANK OF THE WEST",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BB&T CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "BBVA FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "CAPITAL ONE FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 15
+ },
+ {
+  "CompanyName": "CIT BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "CITIBANK, N.A.",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "CITIZENS FINANCIAL GROUP, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 11
+ },
+ {
+  "CompanyName": "Comerica",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "DISCOVER BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "FIFTH THIRD FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "FIRST CITIZENS BANCSHARES, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "FIRST NATIONAL BANK OF OMAHA",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "FIRST NIAGARA FINANCIAL GROUP, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 9
+ },
+ {
+  "CompanyName": "HANCOCK WHITNEY BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "HSBC NORTH AMERICA HOLDINGS INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "HUNTINGTON NATIONAL BANK, THE",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Bank account or service",
+  "Complaintes": 25
+ },
+ {
+  "CompanyName": "M&T BANK CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "NEW YORK COMMUNITY BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "ONEMAIN FINANCIAL HOLDINGS, LLC.",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PEOPLE'S UNITED BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PNC Bank N.A.",
+  "Product": "Bank account or service",
+  "Complaintes": 7
+ },
+ {
+  "CompanyName": "REGIONS FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "SANTANDER BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 11
+ },
+ {
+  "CompanyName": "STATE FARM BANK, FSB",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SUNTRUST BANKS, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "TD BANK US HOLDING COMPANY",
+  "Product": "Bank account or service",
+  "Complaintes": 10
+ },
+ {
+  "CompanyName": "U.S. BANCORP",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "U.S. BANK NATIONAL ASSOCIATION - SAN FRANCISCO MAIN BRANCH",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "UNITED SERVICES AUTOMOBILE ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "VALLEY NATIONAL BANCORP",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WEBSTER BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WELLS FARGO & COMPANY",
+  "Product": "Bank account or service",
+  "Complaintes": 32
+ },
+ {
+  "CompanyName": "ALLY FINANCIAL INC.",
+  "Product": "Consumer Loan",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+  "Product": "Consumer Loan",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "CAPITAL ONE FINANCIAL CORPORATION",
+  "Product": "Consumer Loan",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "CITIZENS FINANCIAL GROUP, INC.",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Company",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "DriveTime",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "FIFTH THIRD FINANCIAL CORPORATION",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "M&T BANK CORPORATION",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Navient Solutions, LLC.",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SANTANDER BANK, NATIONAL ASSOCIATION",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "STATE FARM BANK, FSB",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SUNTRUST BANKS, INC.",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "TD BANK US HOLDING COMPANY",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "UNITED SERVICES AUTOMOBILE ASSOCIATION",
+  "Product": "Consumer Loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WELLS FARGO & COMPANY",
+  "Product": "Consumer Loan",
+  "Complaintes": 9
+ },
+ {
+  "CompanyName": "AMERICAN EXPRESS COMPANY",
+  "Product": "Credit card",
+  "Complaintes": 13
+ },
+ {
+  "CompanyName": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+  "Product": "Credit card",
+  "Complaintes": 32
+ },
+ {
+  "CompanyName": "BARCLAYS BANK DELAWARE",
+  "Product": "Credit card",
+  "Complaintes": 7
+ },
+ {
+  "CompanyName": "BBVA FINANCIAL CORPORATION",
+  "Product": "Credit card",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BMO HARRIS BANK NATIONAL ASSOCIATION",
+  "Product": "Credit card",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "CAPITAL ONE FINANCIAL CORPORATION",
+  "Product": "Credit card",
+  "Complaintes": 49
+ },
+ {
+  "CompanyName": "CITIBANK, N.A.",
+  "Product": "Credit card",
+  "Complaintes": 56
+ },
+ {
+  "CompanyName": "DISCOVER BANK",
+  "Product": "Credit card",
+  "Complaintes": 11
+ },
+ {
+  "CompanyName": "FIRST NATIONAL BANK OF OMAHA",
+  "Product": "Credit card",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Credit card",
+  "Complaintes": 36
+ },
+ {
+  "CompanyName": "PEOPLE'S UNITED BANK, NATIONAL ASSOCIATION",
+  "Product": "Credit card",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PNC Bank N.A.",
+  "Product": "Credit card",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "REGIONS FINANCIAL CORPORATION",
+  "Product": "Credit card",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "SUNTRUST BANKS, INC.",
+  "Product": "Credit card",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SYNCHRONY FINANCIAL",
+  "Product": "Credit card",
+  "Complaintes": 19
+ },
+ {
+  "CompanyName": "U.S. BANCORP",
+  "Product": "Credit card",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "UNITED SERVICES AUTOMOBILE ASSOCIATION",
+  "Product": "Credit card",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WELLS FARGO & COMPANY",
+  "Product": "Credit card",
+  "Complaintes": 15
+ },
+ {
+  "CompanyName": "21ST MORTGAGE CORP.",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Advance Title & Abstract, Inc.",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "AMERICAN EAGLE MORTGAGE COMPANY",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "AMERICAN EQUITY MORTGAGE",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "AMERICAN INTERNET MORTGAGE",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "ARVEST BANK GROUP, INC.",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+  "Product": "Mortgage",
+  "Complaintes": 238
+ },
+ {
+  "CompanyName": "BANK OF THE WEST",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BB&T CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BMO HARRIS BANK NATIONAL ASSOCIATION",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "Caliber Home Loans, Inc.",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "CARRINGTON MORTGAGE SERVICES, LLC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "CIT BANK, NATIONAL ASSOCIATION",
+  "Product": "Mortgage",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "CITIBANK, N.A.",
+  "Product": "Mortgage",
+  "Complaintes": 29
+ },
+ {
+  "CompanyName": "CITIZENS FINANCIAL GROUP, INC.",
+  "Product": "Mortgage",
+  "Complaintes": 4
+ },
+ {
+  "CompanyName": "COASTAL STATES MORTGAGE CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "Community Loan Servicing, LLC (formerly known as Bayview Loan Servicing, LLC)",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Ditech Financial LLC",
+  "Product": "Mortgage",
+  "Complaintes": 12
+ },
+ {
+  "CompanyName": "E*TRADE BANK",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "EVERBANK, NATIONAL ASSOCIATION",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "FIFTH THIRD FINANCIAL CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "Flagstar Bank, N.A.",
+  "Product": "Mortgage",
+  "Complaintes": 8
+ },
+ {
+  "CompanyName": "Fleet Mortgage Corp",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Freedom Mortgage Company",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "HSBC NORTH AMERICA HOLDINGS INC.",
+  "Product": "Mortgage",
+  "Complaintes": 28
+ },
+ {
+  "CompanyName": "HUNTINGTON NATIONAL BANK, THE",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "InterLinc Mortgage Services, LLC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Mortgage",
+  "Complaintes": 64
+ },
+ {
+  "CompanyName": "KWIK MORTGAGE CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "LoanCare, LLC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "M&T BANK CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "MOUNTAIN WEST FINANCIAL, INC.",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "NATIONSTAR MORTGAGE LLC",
+  "Product": "Mortgage",
+  "Complaintes": 16
+ },
+ {
+  "CompanyName": "NEW YORK COMMUNITY BANK",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Ocwen Financial Corporation",
+  "Product": "Mortgage",
+  "Complaintes": 75
+ },
+ {
+  "CompanyName": "Pacific Residential Mortgage",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PENNYMAC LOAN SERVICES, LLC.",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PHH Mortgage Services Corporation",
+  "Product": "Mortgage",
+  "Complaintes": 9
+ },
+ {
+  "CompanyName": "PNC Bank N.A.",
+  "Product": "Mortgage",
+  "Complaintes": 11
+ },
+ {
+  "CompanyName": "Prospect Mortgage, LLC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Quantum Servicing Corporation",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "REGIONS FINANCIAL CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "Rochester Home Equity, Inc",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Rocket Mortgage, LLC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SANTANDER BANK, NATIONAL ASSOCIATION",
+  "Product": "Mortgage",
+  "Complaintes": 4
+ },
+ {
+  "CompanyName": "SELECT PORTFOLIO SERVICING, INC.",
+  "Product": "Mortgage",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "Selene Finance LP",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "Seterus, Inc.",
+  "Product": "Mortgage",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "SN SERVICING CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "Specialized Loan Servicing Holdings LLC",
+  "Product": "Mortgage",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "Statebridge Company",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "SUNTRUST BANKS, INC.",
+  "Product": "Mortgage",
+  "Complaintes": 10
+ },
+ {
+  "CompanyName": "SYNCHRONY FINANCIAL",
+  "Product": "Mortgage",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "TCF NATIONAL BANK",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "TD BANK US HOLDING COMPANY",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "TFS FINANCIAL CORPORATION",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "U.S. BANCORP",
+  "Product": "Mortgage",
+  "Complaintes": 10
+ },
+ {
+  "CompanyName": "UNITED SERVICES AUTOMOBILE ASSOCIATION",
+  "Product": "Mortgage",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "VANDERBILT MORTGAGE & FINANCE, INC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Vanderwey Investments, LLC",
+  "Product": "Mortgage",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WELLS FARGO & COMPANY",
+  "Product": "Mortgage",
+  "Complaintes": 92
+ },
+ {
+  "CompanyName": "ACCESS GROUP INC.",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "ACS Education Services",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "AES\/PHEAA",
+  "Product": "Student loan",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "CITIBANK, N.A.",
+  "Product": "Student loan",
+  "Complaintes": 4
+ },
+ {
+  "CompanyName": "CITIZENS FINANCIAL GROUP, INC.",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Cognition Financial Corporation",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "DISCOVER BANK",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Navient Solutions, LLC.",
+  "Product": "Student loan",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "Nelnet, Inc.",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Rhode Island Student Loan Authority",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "U.S. BANCORP",
+  "Product": "Student loan",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WELLS FARGO & COMPANY",
+  "Product": "Student loan",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "WELLS FARGO & COMPANY",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "ALLY FINANCIAL INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "AMERICAN EXPRESS COMPANY",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "ASSOCIATED BANC-CORP",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANCO POPULAR DE PUERTO RICO",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "BANCORPSOUTH BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 139
+ },
+ {
+  "CompanyName": "BANK OF HAWAII CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANK OF NEW YORK MELLON CORPORATION, THE",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "BANK OF THE WEST",
+  "Product": "Bank account or service",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "BB&T CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 18
+ },
+ {
+  "CompanyName": "BBVA FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 4
+ },
+ {
+  "CompanyName": "BMO HARRIS BANK NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "BOK FINANCIAL CORP",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "CAPITAL ONE FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 22
+ },
+ {
+  "CompanyName": "CHARLES SCHWAB CORPORATION, THE",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "CIT BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "CITIBANK, N.A.",
+  "Product": "Bank account or service",
+  "Complaintes": 23
+ },
+ {
+  "CompanyName": "CITIZENS FINANCIAL GROUP, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 17
+ },
+ {
+  "CompanyName": "Comerica",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "COMMERCE BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "CULLEN\/FROST BANKERS, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "DISCOVER BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "Dynamic Recovery Solutions, LLC",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "EAST WEST BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "EVERBANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Fidelity National Information Services, Inc. (FNIS)",
+  "Product": "Bank account or service",
+  "Complaintes": 5
+ },
+ {
+  "CompanyName": "FIFTH THIRD FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 14
+ },
+ {
+  "CompanyName": "First Data Corporation",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "FIRST NIAGARA FINANCIAL GROUP, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 4
+ },
+ {
+  "CompanyName": "GOLDMAN SACHS BANK USA",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "HSBC NORTH AMERICA HOLDINGS INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 8
+ },
+ {
+  "CompanyName": "HUNTINGTON NATIONAL BANK, THE",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "HUNTINGTON NATIONAL BANK, THE - FIRSTMERIT BANK, N.A. BRANCH",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "INVESTORS BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "JPMORGAN CHASE & CO.",
+  "Product": "Bank account or service",
+  "Complaintes": 85
+ },
+ {
+  "CompanyName": "KEYCORP",
+  "Product": "Bank account or service",
+  "Complaintes": 4
+ },
+ {
+  "CompanyName": "M&T BANK CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 18
+ },
+ {
+  "CompanyName": "MORGAN STANLEY & CO. LLC",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "NAVY FEDERAL CREDIT UNION",
+  "Product": "Bank account or service",
+  "Complaintes": 6
+ },
+ {
+  "CompanyName": "Northern Trust Company, The",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "Optio Solutions, LLC",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "Paypal Holdings, Inc",
+  "Product": "Bank account or service",
+  "Complaintes": 8
+ },
+ {
+  "CompanyName": "PENTAGON FEDERAL CREDIT UNION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PEOPLE'S UNITED BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "PNC Bank N.A.",
+  "Product": "Bank account or service",
+  "Complaintes": 39
+ },
+ {
+  "CompanyName": "POPULAR BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "PROSPERITY BANCSHARES, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "REGIONS FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 16
+ },
+ {
+  "CompanyName": "Residential Credit Solutions, Inc.",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SANTANDER BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 12
+ },
+ {
+  "CompanyName": "STATE STREET BANK AND TRUST COMPANY",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "SUNTRUST BANKS, INC.",
+  "Product": "Bank account or service",
+  "Complaintes": 30
+ },
+ {
+  "CompanyName": "SYNCHRONY FINANCIAL",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "Synovus Bank",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "TCF NATIONAL BANK",
+  "Product": "Bank account or service",
+  "Complaintes": 14
+ },
+ {
+  "CompanyName": "TD BANK US HOLDING COMPANY",
+  "Product": "Bank account or service",
+  "Complaintes": 42
+ },
+ {
+  "CompanyName": "TRUSTMARK CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "U.S. BANCORP",
+  "Product": "Bank account or service",
+  "Complaintes": 39
+ },
+ {
+  "CompanyName": "U.S. BANK NATIONAL ASSOCIATION - SAN FRANCISCO MAIN BRANCH",
+  "Product": "Bank account or service",
+  "Complaintes": 2
+ },
+ {
+  "CompanyName": "UMB FINANCIAL CORPORATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ },
+ {
+  "CompanyName": "UNITED SERVICES AUTOMOBILE ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 14
+ },
+ {
+  "CompanyName": "VALLEY NATIONAL BANCORP",
+  "Product": "Bank account or service",
+  "Complaintes": 3
+ },
+ {
+  "CompanyName": "WEBSTER BANK, NATIONAL ASSOCIATION",
+  "Product": "Bank account or service",
+  "Complaintes": 1
+ }]
+
+    $(document).ready(function() {
+        var dataTable = $('#commonDataTable').DataTable();
+
+        jsonData.forEach(function(item) {
+            dataTable.row.add([
+                item.CompanyName,
+                item.Product,
+                item.Complaintes,
+                '<button type="button" class="btn"><a href="complaintsDetails.html"><i class="fa-solid fa-eye primaryColor"></i></a></button>'
+            ]).draw();
+        });
+    });
+</script>
