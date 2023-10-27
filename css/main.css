@@ -337,3 +337,54 @@ html, body
 }
 /*Data Table Pagenation Css Ends Here*/
 /*Table Css Ends Here*/
+/*Graph Part Css Starts Here*/
+.graphPart .card-body {
+    height: 560px;
+}
+
+.graphPart .card-body .commonImage {
+    object-fit: contain;
+}
+
+.graphPart .card-body canvas {
+    height: 520px !important;
+    width: auto !important;
+    margin: 0 auto;
+}
+
+/*Graph Part Css Ends Here*/
+/*Toaster Message Css Starts Here*/
+.commonToaster {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9;
+}
+
+.commonToaster .toast-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.commonToaster .toast-body {
+    font-weight: 600;
+    font-size: 20px;
+    color: #212121;
+    padding: 32px 12px;
+    text-align: center;
+}
+
+.commonToaster.toasterSucess .toast-header {
+    background-color: #1abc9c;
+}
+
+.commonToaster.toasterDeleted .toast-header {
+    background-color: #e74c3c;
+}
+
+.commonToaster.toasterUpdated .toast-header {
+    background-color: #3498db;
+}
+
+/*Toaster Message Css Ends Here*/
