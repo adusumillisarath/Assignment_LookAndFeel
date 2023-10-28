@@ -4,14 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <!-- Bootstrap Css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- Data Tables Css -->
-    <link rel="stylesheet" type="text/css" href="css/datatables.css" />
     <!-- Custom Css -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Assignment - 3</title>
@@ -109,14 +104,18 @@
                                                 <td data-label="Complaint Status">PR</td>
                                                 <td data-label="Complaint Registered">6/6/2012</td>
                                                 <td data-label="Action" class="actionColumn">
-                                                    <button onclick="actionType('VEdit')" type="button" class="btn">
-                                                        <a ><i class="fa-solid fa-eye primaryColor"></i></a>
+                                                    <button type="button" class="btn">
+                                                        <a href="complaintsAddEdit.html">
+                                                            <img src="img/eye.png" />
+                                                        </a>
                                                     </button>
-                                                    <button onclick="actionType('Update')" type="button" class="btn">
-                                                        <a ><i class="fa-solid fa-pen editColor"></i></a>
+                                                    <button type="button" class="btn">
+                                                        <a href="complaintsAddEdit.html">
+                                                            <img src="img/edit.png" />
+                                                        </a>
                                                     </button>
                                                     <button type="button" class="btn grayBtn" data-bs-toggle="modal" data-bs-target="#deleteRecord">
-                                                        <i class="fa-solid fa-trash deleteColor"></i>
+                                                        <img src="img/delete.png" />
                                                     </button>
                                                 </td>
                                             </tr> 
@@ -128,14 +127,18 @@
                                                 <td data-label="Complaint Status">GA</td>
                                                 <td data-label="Complaint Registered">6/7/2012</td>
                                                 <td data-label="Action" class="actionColumn">
-                                                    <button onclick="actionType('VEdit')" type="button" class="btn">
-                                                        <a ><i class="fa-solid fa-eye primaryColor"></i></a>
+                                                    <button type="button" class="btn">
+                                                        <a href="complaintsAddEdit.html">
+                                                            <img src="img/eye.png" />
+                                                        </a>
                                                     </button>
-                                                    <button onclick="actionType('Update')" type="button" class="btn">
-                                                        <a ><i class="fa-solid fa-pen editColor"></i></a>
+                                                    <button type="button" class="btn">
+                                                        <a href="complaintsAddEdit.html">
+                                                            <img src="img/edit.png" />
+                                                        </a>
                                                     </button>
                                                     <button type="button" class="btn grayBtn" data-bs-toggle="modal" data-bs-target="#deleteRecord">
-                                                        <i class="fa-solid fa-trash deleteColor"></i>
+                                                        <img src="img/delete.png" />
                                                     </button>
                                                 </td>
                                             </tr>                                            
@@ -210,10 +213,10 @@
     </footer>
     <!-- Footer Section Ends Here -->
     <!--JS links-->
-    <!-- Jquery Js-->
+    <!--Jquey-->
     <script type="text/javascript" src="js/jqery.min.js"></script>
-    <!-- DataTables Js-->
-    <script type="text/javascript" src="js/datatables.js"></script>
+    <!-- Charts Js -->
+    <script type="text/javascript" src="js/chart.js"></script>
     <!-- FontAwsome Js-->
     <script type="text/javascript" src="js/fontawsome.js"></script>
     <!-- Bootstrap.min Js-->
@@ -282,7 +285,7 @@
     });
 </script>
 <script>
-    //raise a complaint function
+    //raise a complaints fucntion
     function actionType(type){
 
         //add the action type here based on that type of page will decided.
