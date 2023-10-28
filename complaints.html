@@ -287,6 +287,16 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
 
+</script>
+    <script>
+        //raise a complaints fucntion
+        function actionType(type) {
+
+            //add the action type here based on that type of page will decided.
+            localStorage.setItem("action", type);
+            //navigation to complaint page.
+            window.location.href = 'complaintsAddEdit.html';
+        }
     </script>
 </body>
 
