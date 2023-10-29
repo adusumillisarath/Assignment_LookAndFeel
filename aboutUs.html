@@ -229,7 +229,7 @@
 			<h4 class="commonSectionTitle borderTitle">API Details</h4>
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12">
-                        <ol class="commonUl">
+                        <ol class="commonUl"  style="word-break: break-all;">
 							<li>
                                 <h6>Description</h6>
                                 <p>The Consumer Complaint Data is a collection of complaints about consumer financial products and services that we sent to companies for response. Complaints are published after the company responds, confirming a commercial relationship with the consumer, or after 15 days, whichever comes first. Complaints referred to other regulators, such as complaints about depository institutions with less than $10 billion in assets, are not published in the Consumer Complaint Database. The database generally updates daily. </p>
@@ -242,15 +242,7 @@
                                 <h6>Introduction</h6>
                                 <p>These endpoints provide access to consumer complaints</p>
                             </li>
-                            <li>
-                                <h6>Getting Started</h6>
-                                <ol>
-                                    <li>
-                                        <h6>API Access</h6>
-                                        <p>API Access Describe how to access the API, including endpoints, base URL, and any access requirements.</p>
-                                    </li>
-                                </ol>
-                            </li>
+                            
                             <li>
                                 <h6>Endpoints</h6>
                                 <ol>
@@ -281,123 +273,123 @@
                                         </p>
                                         <p><b>Response</b></p>
                                         <pre>
-                                            {
-                                                "took": 155,
-                                                "timed_out": false,
-                                                "_shards": {
-                                                    "total": 5,
-                                                    "successful": 5,
-                                                    "skipped": 0,
-                                                    "failed": 0
-                                                },
-                                                "hits": {
-                                                    "total": {
-                                                        "value": 0,
-                                                        "relation": "eq"
-                                                    },
-                                                    "max_score": null,
-                                                    "hits": []
-                                                },
-                                                "aggregations": {
-                                                    "has_narrative": {
-                                                        "doc_count": 0,
-                                                        "has_narrative": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "product": {
-                                                        "doc_count": 0,
-                                                        "product": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "issue": {
-                                                        "doc_count": 0,
-                                                        "issue": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "timely": {
-                                                        "doc_count": 0,
-                                                        "timely": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "consumer_consent_provided": {
-                                                        "doc_count": 0,
-                                                        "consumer_consent_provided": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "company_response": {
-                                                        "doc_count": 0,
-                                                        "company_response": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "submitted_via": {
-                                                        "doc_count": 0,
-                                                        "submitted_via": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "state": {
-                                                        "doc_count": 0,
-                                                        "state": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "consumer_disputed": {
-                                                        "doc_count": 0,
-                                                        "consumer_disputed": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "company_public_response": {
-                                                        "doc_count": 0,
-                                                        "company_public_response": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    },
-                                                    "tags": {
-                                                        "doc_count": 0,
-                                                        "tags": {
-                                                            "doc_count_error_upper_bound": 0,
-                                                            "sum_other_doc_count": 0,
-                                                            "buckets": []
-                                                        }
-                                                    }
-                                                },
-                                                "_meta": {
-                                                    "license": "CC0",
-                                                    "last_updated": "2023-10-27T12:00:00-05:00",
-                                                    "last_indexed": "2023-10-28T12:00:00-05:00",
-                                                    "total_record_count": 4227387,
-                                                    "is_data_stale": false,
-                                                    "has_data_issue": false,
-                                                    "break_points": {}
-                                                }
-                                            }
+        {
+            "took": 155,
+            "timed_out": false,
+            "_shards": {
+                "total": 5,
+                "successful": 5,
+                "skipped": 0,
+                "failed": 0
+            },
+            "hits": {
+                "total": {
+                    "value": 0,
+                    "relation": "eq"
+                },
+                "max_score": null,
+                "hits": []
+            },
+            "aggregations": {
+                "has_narrative": {
+                    "doc_count": 0,
+                    "has_narrative": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "product": {
+                    "doc_count": 0,
+                    "product": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "issue": {
+                    "doc_count": 0,
+                    "issue": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "timely": {
+                    "doc_count": 0,
+                    "timely": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "consumer_consent_provided": {
+                    "doc_count": 0,
+                    "consumer_consent_provided": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "company_response": {
+                    "doc_count": 0,
+                    "company_response": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "submitted_via": {
+                    "doc_count": 0,
+                    "submitted_via": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "state": {
+                    "doc_count": 0,
+                    "state": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "consumer_disputed": {
+                    "doc_count": 0,
+                    "consumer_disputed": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "company_public_response": {
+                    "doc_count": 0,
+                    "company_public_response": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                },
+                "tags": {
+                    "doc_count": 0,
+                    "tags": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": []
+                    }
+                }
+            },
+            "_meta": {
+                "license": "CC0",
+                "last_updated": "2023-10-27T12:00:00-05:00",
+                "last_indexed": "2023-10-28T12:00:00-05:00",
+                "total_record_count": 4227387,
+                "is_data_stale": false,
+                "has_data_issue": false,
+                "break_points": {}
+            }
+        }
                                             
                                         </pre>
                                         <h6>Description:</h6>
@@ -415,13 +407,34 @@
                                         </p>
                                         <h6>Response: </h6>
                                         <pre>
-                                            HTTP/1.1 200 OK
-                                            Content-Type: application/json
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
-                                            {
-                                            "status": "success",
-                                            "message": "Complaints retrived successfully"
-                                            }
+        {
+        "status": "success",
+        "message": "Complaints retrived successfully",
+        "data": [{
+            "companyname" : "AR VR Company",
+            "product" : "Bank account or service",
+            "noofcomplaints" :"1"
+        },
+        {
+            "companyname" : "BANCO POPULAR DE PUERTO RICO",
+            "product" : "Bank account or service",
+            "noofcomplaints" :"3"
+        }, 
+        {
+            "companyname" : "BANK OF AMERICA, NATIONAL ASSOCIATION",
+            "product" : "Bank account or service",
+            "noofcomplaints" :"28"
+        },
+        {
+            "companyname" : "BANK OF THE WEST",
+            "product" : "Bank account or service",
+            "noofcomplaints" : "6"
+        },                                             
+        ]
+        }
                                         </pre>
                                         <p>
                                             <span><b>Description:</b></span>
@@ -439,27 +452,27 @@
                                             <span>Json Body</span>
                                         </p>
                                         <pre>
-                                            {
-                                                "Product": "Bank account or service",
-                                                "ComplaintWhatHappened": "",
-                                                "DateSentToCompany": "2023-10-29T09:44",
-                                                "Issue": "Deposits and withdrawals",
-                                                "SubProduct": "Checking account",
-                                                "ZipCode": "94605",
-                                                "Tags": "Older American",
-                                                "HasNarrative": true,
-                                                "Timely": "Yes",
-                                                "ConsumerConsentProvided": "N/A",
-                                                "CompanyResponse": "N/A",
-                                                "SubmittedVia": "Phone",
-                                                "Company": "WELLS FARGO & COMPANY",
-                                                "Complaint_Id": 0,
-                                                "DateReceived": "2023-10-29T09:45",
-                                                "State": "CA",
-                                                "ConsumerDisputed": "No",
-                                                "CompanyPublicResponse": "",
-                                                "SubIssue": "Used obscene/profane/abusive language"
-                                            }                                            
+        {
+            "Product": "Bank account or service",
+            "ComplaintWhatHappened": "",
+            "DateSentToCompany": "2023-10-29T09:44",
+            "Issue": "Deposits and withdrawals",
+            "SubProduct": "Checking account",
+            "ZipCode": "94605",
+            "Tags": "Older American",
+            "HasNarrative": true,
+            "Timely": "Yes",
+            "ConsumerConsentProvided": "N/A",
+            "CompanyResponse": "N/A",
+            "SubmittedVia": "Phone",
+            "Company": "WELLS FARGO & COMPANY",
+            "Complaint_Id": 0,
+            "DateReceived": "2023-10-29T09:45",
+            "State": "CA",
+            "ConsumerDisputed": "No",
+            "CompanyPublicResponse": "",
+            "SubIssue": "Used obscene/profane/abusive language"
+        }                                            
                                         </pre>
                                         <p>
                                             <span><b>HTTP Method:</b></span>
@@ -469,13 +482,13 @@
                                             <span><b>Response:</b></span>
                                         </p>
                                         <pre>
-                                            HTTP/1.1 200 OK
-                                            Content-Type: application/json
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
-                                            {
-                                            "status": "success",
-                                            "message": "Complaint created successfully"
-                                            }
+        {
+        "status": "success",
+        "message": "Complaint created successfully"
+        }
                                         </pre>
                                         <p>
                                             <span><b>Description:</b></span>
@@ -497,66 +510,66 @@
                                             <span> Query Params</span>
                                         </p>
                                         <pre>
-                                            "Product": "Bank account or service",
-                                            "SubProduct": "Checking account",                                           
+        "Product": "Bank account or service",
+        "Company": "AR VR Company",                                           
                                         </pre>
                                         <p><b>Response:</b></p>
-                                        <p>
-                                            HTTP/1.1 200 OK
-                                            Content-Type: application/json
+                                        <pre>
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
-                                            {
-                                            "status": "success",
-                                            "message": "Complaints Data retrieved successfully",
-                                                "data": [
-                                                        {
-                                                    "Product": "account or service",
-                                                    "ComplaintWhatHappened": "Happend",
-                                                    "DateSentToCompany": "07/08/2014",
-                                                    "Issue": "Account opening, closing, or management",
-                                                    "SubProduct": "(CD) Certificate of deposit",
-                                                    "ZipCode": "00603",
-                                                    "Tags": "Loan",
-                                                    "HasNarrative": true,
-                                                    "ComplaintId": "97144",
-                                                    "Timely": "Yes",
-                                                    "ConsumerConsentProvided": "N/A",
-                                                    "CompanyResponse": "N/A",
-                                                    "SubmittedVia": "Web",
-                                                    "Company": "BANCO POPULAR DE PUERTO RICO",
-                                                    "DateReceived": "07/09/2013",
-                                                    "State": "PR",
-                                                    "ConsumerDisputed": "No",
-                                                    "CompanyPublicResponse": "Public",
-                                                    "SubIssue": "Response",
-                                                    
-                                                },
-                                                {
-                                                    "Product": "Bank account or service",
-                                                    "ComplaintWhatHappened": "Happend",
-                                                    "DateSentToCompany": "05/08/2005",
-                                                    "Issue": "Account opening, closing, or management",
-                                                    "SubProduct": "(CD) Certificate of deposit",
-                                                    "ZipCode": "00603",
-                                                    "Tags": "Loan",
-                                                    "HasNarrative": true,
-                                                    "ComplaintId": "97144",
-                                                    "Timely": "Yes",
-                                                    "ConsumerConsentProvided": "N/A",
-                                                    "CompanyResponse": "N/A",
-                                                    "SubmittedVia": "Web",
-                                                    "Company": "BANCO POPULAR DE PUERTO RICO",
-                                                    "DateReceived": "02/12/2004",
-                                                    "State": "PR",
-                                                    "ConsumerDisputed": "No",
-                                                    "CompanyPublicResponse": "Public",
-                                                    "SubIssue": "Response",
-                                                    
-                                                        }
-                                            ]
+        {
+        "status": "success",
+        "message": "Complaints Data retrieved successfully",
+            "data": [
+                    {
+                "Product": "Bank account or service",
+                "ComplaintWhatHappened": "Happend",
+                "DateSentToCompany": "07/08/2014",
+                "Issue": "Account opening, closing, or management",
+                "SubProduct": "(CD) Certificate of deposit",
+                "ZipCode": "00603",
+                "Tags": "Loan",
+                "HasNarrative": true,
+                "ComplaintId": "97144",
+                "Timely": "Yes",
+                "ConsumerConsentProvided": "N/A",
+                "CompanyResponse": "N/A",
+                "SubmittedVia": "Web",
+                "Company": "AR VR Company",
+                "DateReceived": "07/09/2013",
+                "State": "PR",
+                "ConsumerDisputed": "No",
+                "CompanyPublicResponse": "Public",
+                "SubIssue": "Response",
+                
+            },
+            {
+                "Product": "Bank account or service",
+                "ComplaintWhatHappened": "Happend",
+                "DateSentToCompany": "05/08/2005",
+                "Issue": "Account opening, closing, or management",
+                "SubProduct": "(CD) Certificate of deposit",
+                "ZipCode": "00603",
+                "Tags": "Loan",
+                "HasNarrative": true,
+                "ComplaintId": "97144",
+                "Timely": "Yes",
+                "ConsumerConsentProvided": "N/A",
+                "CompanyResponse": "N/A",
+                "SubmittedVia": "Web",
+                "Company": "AR VR Company",
+                "DateReceived": "02/12/2004",
+                "State": "PR",
+                "ConsumerDisputed": "No",
+                "CompanyPublicResponse": "Public",
+                "SubIssue": "Response",
+                
+            }
+        ]
 
-                                            }
-                                        </p>
+        }
+                                        </pre>
                                         <p>
                                             <span><b>Description :</b></span>
                                             <span>In the details page view the list of products, company status, issue, complaint registered  </span>
@@ -566,7 +579,7 @@
                                         <h6> Get a complaint details by Complaint id for View</h6>
                                         <p>
                                             <span class="">URL: </span>
-                                            <span>/ComplaintsController/GetDetailsByProductCompany</span>
+                                            <span>/ComplaintsController/GetDetailsById</span>
                                         </p>
                                         <p>
                                             <span class="">HTTP Method:</span>
@@ -577,39 +590,39 @@
                                             <span>Query Params</span>
                                         </p>
                                         <pre>
-                                            "Complaint_Id": 999589,
+        "Complaint_Id": 999589,
                                         </pre>  
                                         <p><b>Response:</b></p>    
                                         <pre>
-                                            HTTP/1.1 200 OK
-                                            Content-Type: application/json
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
-                                            {
-                                            "status": "success",
-                                            "message": "Complaint details retrieved successfully",
-                                            "data": {
-                                                        "Product": "Bank account or service",
-                                                        "ComplaintWhatHappened": "Happend",
-                                                        "DateSentToCompany": "12/02/2016",
-                                                    "Issue": "Account opening, closing, or management",
-                                                        "SubProduct": "(CD) Certificate of deposit",
-                                                        "ZipCode": "00603",
-                                                        "Tags": "Loan",
-                                                        "HasNarrative": true,
-                                                        "ComplaintId": "999589",
-                                                        "Timely": "Yes",
-                                                        "ConsumerConsentProvided": "N/A",
-                                                        "CompanyResponse": "N/A",
-                                                        "SubmittedVia": "Web",
-                                                        "Company": "BANCO POPULAR DE PUERTO RICO",
-                                                        "DateReceived": “12/02/2016”,
-                                                        "State": "PR",
-                                                        "ConsumerDisputed": "No",
-                                                        "CompanyPublicResponse": "Public",
-                                                        "SubIssue": "Response",
-                                                
-                                            }
-                                            }
+        {
+        "status": "success",
+        "message": "Complaint details retrieved successfully",
+        "data": {
+                    "Product": "Bank account or service",
+                    "ComplaintWhatHappened": "Happend",
+                    "DateSentToCompany": "12/02/2016",
+                    "Issue": "Account opening, closing, or management",
+                    "SubProduct": "(CD) Certificate of deposit",
+                    "ZipCode": "00603",
+                    "Tags": "Loan",
+                    "HasNarrative": true,
+                    "ComplaintId": "999589",
+                    "Timely": "Yes",
+                    "ConsumerConsentProvided": "N/A",
+                    "CompanyResponse": "N/A",
+                    "SubmittedVia": "Web",
+                    "Company": "BANCO POPULAR DE PUERTO RICO",
+                    "DateReceived": “12/02/2016”,
+                    "State": "PR",
+                    "ConsumerDisputed": "No",
+                    "CompanyPublicResponse": "Public",
+                    "SubIssue": "Response",
+            
+                }
+        }
                                         </pre> 
                                         <p>
                                             <span>Description:</span>
@@ -631,38 +644,39 @@
                                             <span>Body</span>
                                         </p>
                                         <pre>
-                                            {
-                                                "Product": "Bank account or service",
-                                                "ComplaintWhatHappened": "",
-                                                "DateSentToCompany": "2023-10-29T09:44",
-                                                "Issue": "Deposits and withdrawals",
-                                                "SubProduct": "Checking account",
-                                                "ZipCode": "94605",
-                                                "Tags": "Older American",
-                                                "HasNarrative": true,
-                                                "Timely": "Yes",
-                                                "ConsumerConsentProvided": "N/A",
-                                                "CompanyResponse": "N/A",
-                                                "SubmittedVia": "Phone",
-                                                "Company": "WELLS FARGO & COMPANY",
-                                                "Complaint_Id": 87845,
-                                                "DateReceived": "2023-10-29T09:45",
-                                                "State": "CA",
-                                                "ConsumerDisputed": "No",
-                                                "CompanyPublicResponse": "",
-                                                "SubIssue": "Used obscene/profane/abusive language"
-                                            }                                            
+        {
+            "Product": "Bank account or service",
+            "ComplaintWhatHappened": "",
+            "DateSentToCompany": "2023-10-29T09:44",
+            "Issue": "Deposits and withdrawals",
+            "SubProduct": "Checking account",
+            "ZipCode": "94605",
+            "Tags": "Older American",
+            "HasNarrative": true,
+            "Timely": "Yes",
+            "ConsumerConsentProvided": "N/A",
+            "CompanyResponse": "N/A",
+            "SubmittedVia": "Phone",
+            "Company": "WELLS FARGO & COMPANY",
+            "Complaint_Id": 87845,
+            "DateReceived": "2023-10-29T09:45",
+            "State": "CA",
+            "ConsumerDisputed": "No",
+            "CompanyPublicResponse": "",
+            "SubIssue": "Used obscene/profane/abusive language"
+        }                                            
                                         </pre> 
                                         <p>
                                             <span><b>Response:</b></span>
-                                            <span> HTTP/1.1 200 OK
-                                            Content-Type: application/json
+                                            <pre>
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
-                                            {
-                                            "status": "success",
-                                            "message": "Complaint Updated successfully",
-                                            }
-                                            </span>
+        {
+        "status": "success",
+        "message": "Complaint Updated successfully",
+        }
+                                            </pre>
                                         </p>  
                                         <p>
                                             <span><b>Description :</b></span>
@@ -686,15 +700,15 @@
                                             <span>Query Params</span>
                                         </p>
                                         <pre>
-                                            "Complaint_Id": 999589
-                                            Response:
-                                            HTTP/1.1 200 OK
-                                            Content-Type: application/json
+        "Complaint_Id": 999589
+        Response:
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
-                                            {
-                                            "status": "success",
-                                            "message": "Complaint Delete successfully",
-                                            }                                          
+        {
+        "status": "success",
+        "message": "Complaint Delete successfully",
+        }                                          
                                         </pre>
                                         <p>
                                             <span><b>Description :</b></span>
@@ -717,33 +731,33 @@
                                             <span>Query Params</span>
                                         </p>
                                         <pre>
-                                            "Product": "Bank account or service",
-                                            "SubProduct": "Checking account",                                                                                
+        "Product": "Bank account or service",
+        "SubProduct": "Checking account",                                                                                
                                         </pre>
                                         <p>
                                             <span><b>Response:</b></span>
                                         </p>  
                                         <pre>
-                                            HTTP/1.1 200 OK
-                                            Content-Type: application/json
-                                            {
-                                            "status": "success",
-                                            "message": "Resource created successfully",
-                                                "data": [
-                                                {
-                                                        "Product": "Bank account or service",
-                                                        "SubProduct": "(CD) Certificate of deposit",
-                                                        "Year": 2012,
-                                                        "Complaints": 10
-                                                    },
-                                                {
-                                                        "Product": "Bank account or service",
-                                                        "SubProduct": "(CD) Certificate of deposit",
-                                                        "Year": 2014,
-                                                        "Complaints": 34
-                                                    }
-                                            ]
-                                                }
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        {
+        "status": "success",
+        "message": "Resource created successfully",
+            "data": [
+            {
+                    "Product": "Bank account or service",
+                    "SubProduct": "(CD) Certificate of deposit",
+                    "Year": 2012,
+                    "Complaints": 10
+            },
+            {
+                    "Product": "Bank account or service",
+                    "SubProduct": "(CD) Certificate of deposit",
+                    "Year": 2014,
+                    "Complaints": 34
+            }
+        ]
+        }
                                         </pre> 
                                         <p>
                                             <span><b>Description:</b></span>
