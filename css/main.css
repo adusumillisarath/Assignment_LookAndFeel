@@ -227,6 +227,24 @@ html, body
 {
     width: 80%;
 }
+.apiDocument ol 
+{
+    counter-reset: item;
+    padding-left: 20px;
+}
+.apiDocument li 
+{
+    display: block
+}
+.apiDocument li:before 
+{
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+    float: left;
+    padding-right: 4px;
+    line-height: 18px;
+    font-weight: 500;
+}
 /*About Team Css Ends Here*/
 /*Footer Css Starts Here*/
 .commonFooter 
