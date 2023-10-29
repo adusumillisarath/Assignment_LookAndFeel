@@ -249,15 +249,14 @@
                                     <li>
                                         <h6> Get the Consumer Complaints Data</h6>
                                         <p>
-                                            <span class="">URL: <a href="https://www.consumerfinance.gov/data-research/consumer-ComplaintsController/search/api/v1/?size=1000&company_received_max=2022-10-10&company_received_min=2023-10-10">https://www.consumerfinance.gov/data-research/consumer-ComplaintsController/search/api/v1/?size=1000&company_received_max=2022-10-10&company_received_min=2023-10-10</a> </span>
+                                            <span class="">URL: <a href="https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/">https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/</a> </span>
                                             
                                         </p>
                                         <h6>HTTP Method: GET,</h6>
-                                        <h6>Authorization: Bearer Token</h6>
-                                        <p>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI4MyIsIlJvbGVJZCI6IjEwMDYiLCJVc2VyTmFtZSI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwiQ3VzdG9tZXJJZCI6Ijk0IiwiVXNlclR5cGUiOiJBZG1pbiIsIlJvbGVQZXJtaXNzaW9uIjoiMTAwMSwxMDAzLDEwMDQsMTAwNSwxMDA2LDEwMDcsMTAwOCwxMDA5LDEwMTAsMTAxMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiVXNlciI6IjgzIiwic3ViIjoiODMiLCJ1bmlxdWVfbmFtZSI6IjgzIiwianRpIjoiMmMyMzdjYWUtNTJjYi00NDQ5LWJhMWEtNTQzNWE3YjhkNjlhIiwiaWF0IjoiOS8xMS8yMDIzIDc6MTU6MTAgQU0iLCJuYmYiOjE2OTQ0MTY1MTAsImV4cCI6MTY5NDQ0NTMxMCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo0MDAwLyJ9.clXn5aGN3moe1GTeWMgV1l-AU_GqbFQL5EDybogART8</p>
+                                        
                                         <p>
                                             <span><b>Payload</b></span>
-                                            <span>Query Params</span>
+                                            <span>Query Params (optional)</span>
                                         </p>
                                         <p>
                                             <span><b>size :</b></span>
@@ -717,7 +716,7 @@
                                         </p>                               
                                     </li>
                                     <li>
-                                        <h6> Get a complaint details by Product and Sub_Product for graph</h6>
+                                        <h6> Get a complaint details by Company and Product for graph</h6>
                                         <p>
                                             <span class="">URL: </span>
                                             <span>/ComplaintsController/GetGraphData</span>
@@ -731,8 +730,9 @@
                                             <span>Query Params</span>
                                         </p>
                                         <pre>
+		"Company": "U.S. BANCORP",  
         "Product": "Bank account or service",
-        "SubProduct": "Checking account",                                                                                
+                                                                                     
                                         </pre>
                                         <p>
                                             <span><b>Response:</b></span>
@@ -746,13 +746,13 @@
             "data": [
             {
                     "Product": "Bank account or service",
-                    "SubProduct": "(CD) Certificate of deposit",
+                    "Company": "U.S. BANCORP",
                     "Year": 2012,
                     "Complaints": 10
             },
             {
                     "Product": "Bank account or service",
-                    "SubProduct": "(CD) Certificate of deposit",
+                    "Company": "U.S. BANCORP",
                     "Year": 2014,
                     "Complaints": 34
             }
